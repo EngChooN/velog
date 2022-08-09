@@ -6,6 +6,7 @@
       <p>{{ blogData[$route.params.id].content }}</p>
     </div>
   </div>
+  <router-view></router-view>
 </template>
 
 <script>

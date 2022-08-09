@@ -2,9 +2,7 @@
   <div class="listWrapper">
     <div v-for="(el, index) in blogData" :key="index" class="list">
       <!-- 페이지 이동 라우터 -->
-      <router-link :to="'/list/detail/' + el.number">{{
-        el.title
-      }}</router-link>
+      <router-link :to="'/detail/' + el.number">{{ el.title }}</router-link>
       <p>{{ el.date }}</p>
     </div>
   </div>
